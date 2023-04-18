@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <h1>Final Exam Grade Calculator</h1>
+    <h4>Calculate the requried grade needed for your Final Exam to achieve your desired Class Grade
+    </h4>
+    <div id = "gradeNote">
+        <h5>
+          Total points of Assignments: 45 points<br>
+          Total points of Quizzes: 45 points 
+<br>
+          Total points of Exams: 250 points<br>
+          Total points of Final Exam : 200 points<br>
+
+          Total Possible Points : 540 points<br>
+<br>
+* note that the total points of exams is 250 <br> assuming Reese drops the lowest exam.<br>
+   the total points of Assignments is 45 assuming he drops the lowest assignment<br>
+   the total points of Quizzes is  45 assuming he drops the lowest quiz. *
+          
+        </h5>
+    </div>
+   
+    <form>
+      <div class="form-group">
+        <label for="assign-percent">Assignments (%):</label>
+        <input type="number" id="assign-percent" min="0" max="100" step="0.01">
+      </div>
+      <div class="form-group">
+        <label for="quiz-percent">Quizzes (%):</label>
+        <input type="number" id="quiz-percent" min="0" max="100" step="0.01">
+      </div>
+      <div class="form-group">
+        <label for="exam-percent">Exams (%):</label>
+        <input type="number" id="exam-percent" min="0" max="100" step="0.01">
+      </div>
+      <div class="form-group">
+        <label for="desired-percent">Desired Class Grade (%):</label>
+        <input type="number" id="desired-percent" min="0" max="100" step="0.01">
+      </div>
+      <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
